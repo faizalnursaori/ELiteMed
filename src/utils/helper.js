@@ -39,3 +39,42 @@ export const servicesList = [
   { icon: "/icons/icon-seven.webp", title: "Practice Audit" },
   { icon: "/icons/icon-eight.webp", title: "Appointment scheduling" },
 ];
+
+export const teamMemberData = [
+  {
+    id: 1,
+    imageSrc: "/images/jane-doe.jpg",
+    altText: "Jane Doe",
+    name: "Jane Doe",
+    role: "Chief Executive Officer",
+    description:
+      "As our visionary leader, Jane brings over two decades of experience in healthcare revenue cycle management...",
+  },
+  {
+    id: 2,
+    imageSrc: "/images/michael-johnson.png",
+    altText: "Michael Johnson",
+    name: "Michael Johnson",
+    role: "Chief Operating Officer",
+    description:
+      "With a deep understanding of medical billing intricacies and a keen eye for process optimization.",
+  },
+  {
+    id: 3,
+    imageSrc: "/images/sarah-wilson.png",
+    altText: "Sarah Wilson",
+    name: "Sarah Wilson",
+    role: "Director of Billing Services",
+    description:
+      "Sarah leads our dedicated team of billing specialists, fostering an environment of continuous learning and professional growth.",
+  },
+  {
+    id: 4,
+    imageSrc: "/images/david-thompson.png",
+    altText: "David Thompson",
+    name: "David Thompson",
+    role: "Director of Client Relations",
+    description:
+      "Maintaining strong partnerships is at the core of David's role. With his exceptional communication skills and client-centric approach.",
+  },
+];

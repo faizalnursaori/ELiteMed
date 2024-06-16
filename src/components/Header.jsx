@@ -41,7 +41,10 @@ export const Header = () => {
                     ))}
                 </div>
 
-                <Button className="hidden md:flex items-center bg-green-600 hover:bg-green-700 text-white md:ml-4">
+                <Button
+                    aria-label="Request a Demo"
+                    className="hidden md:flex items-center bg-green-600 hover:bg-green-700 text-white md:ml-4"
+                >
                     <Link href="#">
                         Request a Demo
                     </Link>
@@ -49,6 +52,7 @@ export const Header = () => {
 
                 <div className="md:hidden">
                     <button
+                        aria-label={isMenuOpen ? 'Close Menu' : 'Open Menu'}
                         className="text-gray-700 hover:text-gray-900 focus:outline-none"
                         onClick={toggleMenu}
                     >
@@ -79,7 +83,10 @@ export const Header = () => {
                                 {link.label}
                             </Link>
                         ))}
-                        <Button className="w-full bg-green-600 hover:bg-green-700 text-white">
+                        <Button
+                            aria-label="Request a Demo"
+                            className="w-full bg-green-600 hover:bg-green-700 text-white"
+                        >
                             <Link href="#">
                                 Request a Demo
                             </Link>
