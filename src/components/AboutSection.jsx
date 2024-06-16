@@ -1,5 +1,6 @@
 import Image from "next/image"
 import { Button } from "./ui/button"
+import Link from "next/link"
 
 export const AboutSection = () => {
     return (
@@ -16,7 +17,10 @@ export const AboutSection = () => {
                         accuracy guarantee a seamless billing experience, adhering to regulations and bringing
                         financial success to healthcare providers nationwide.
                     </p>
-                    <Button className="bg-sky-600 hover:bg-sky-700 py-2 px-6">Load More</Button>
+                    <Button className="bg-sky-600 hover:bg-sky-700 py-2 px-6">
+                        <Link href="/about-us">Load More</Link>
+                    </Button>
+
                 </div>
                 <div className="md:w-6/12 md:pl-8">
                     <Image

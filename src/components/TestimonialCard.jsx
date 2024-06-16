@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export const TestimonialCard = ({ clientImage, clientRating, clientTestimonial, clientName }) => {
     return (
-        <div className="p-10 mx-10 bg-white rounded-lg shadow-lg flex items-center">
-            <div className="relative w-24 h-24 mr-6 flex-shrink-0">
+        <div className="p-4 md:p-10 mx-4 md:mx-10 bg-white rounded-lg shadow-lg flex flex-col md:flex-row items-center">
+            <div className="relative w-20 h-20 md:w-24 md:h-24 mb-4 md:mb-0 md:mr-6 flex-shrink-0">
                 <Image
                     src={clientImage}
                     alt={clientName}
@@ -12,13 +12,17 @@ export const TestimonialCard = ({ clientImage, clientRating, clientTestimonial, 
                     className="rounded-full"
                 />
             </div>
-            <div>
-                <div className="flex items-center mb-2">
+            <div className="md:flex-grow">
+                <div className="flex justify-center md:justify-start mb-2">
+                    <p className="text-gray-600 font-semibold">{clientName}</p>
+                </div>
+                <p className="text-gray-700 leading-relaxed mb-2 md:mb-4">{clientTestimonial}</p>
+                <div className="flex items-center justify-center md:justify-start">
                     <div className="flex items-center">
                         {Array.from({ length: clientRating }, (_, index) => (
                             <svg
                                 key={index}
-                                className="h-5 w-5 text-yellow-400"
+                                className="h-4 md:h-5 w-4 md:w-5 text-yellow-400"
                                 viewBox="0 0 24 24"
                                 fill="currentColor"
                             >
@@ -27,8 +31,6 @@ export const TestimonialCard = ({ clientImage, clientRating, clientTestimonial, 
                         ))}
                     </div>
                 </div>
-                <p className="text-gray-700 leading-relaxed mb-4">{clientTestimonial}</p>
-                <p className="text-gray-600 font-semibold">{clientName}</p>
             </div>
         </div>
     );

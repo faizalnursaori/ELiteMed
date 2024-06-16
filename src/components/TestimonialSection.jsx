@@ -18,7 +18,7 @@ export const TestimonialsSection = () => {
             <div className="container mx-auto px-5">
                 <div className="text-center mb-12">
                     <h2 className="text-3xl font-bold text-gray-800 mb-4">What do they say about us?</h2>
-                    <p className="text-gray-600 text-lg">Here are some <span className="font-bold text-sky-600">testimonials</span> from our clients</p>
+                    <p className="text-gray-600 text-lg">Here are some <span className="font-bold">testimonials</span> from our clients</p>
                 </div>
                 <div className="mx-auto max-w-4xl relative">
                     <Carousel

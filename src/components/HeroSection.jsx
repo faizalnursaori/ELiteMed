@@ -12,7 +12,7 @@ export const HeroSection = () => {
                 <h2 className="text-lg font-bold text-green-700 mb-3">
                     Our claim acceptance rate stands at 99.9%
                 </h2>
-                <p className="text-gray-500 mb-4 leading-relaxed">
+                <p className="text-gray-700 mb-4 leading-relaxed">
                     From the moment a patient steps through your doors to the successful collection of
                     payments, our dedicated Revenue Cycle Management (RCM) team is committed to identifying
                     and resolving any obstacles hindering your financial growth
